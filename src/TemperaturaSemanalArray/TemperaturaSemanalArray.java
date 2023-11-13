@@ -100,14 +100,9 @@ public class TemperaturaSemanalArray {
 	    		System.out.println("O dia mais frio é sábado: " + semana[5]);
 	    	} else if (diaFrio == semana[6]) {
 	    		System.out.println("O dia mais frio é domingo: " + semana[6]);
-	    	}      
-	     
+	    	}        
 	     temperaturaIgualDuranteSemana = false;
-	     }
-	    
-	     
-	     
+	     }     
 		scanner.close();
 	}
-
 }
