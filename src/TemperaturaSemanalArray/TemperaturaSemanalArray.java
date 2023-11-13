@@ -57,6 +57,13 @@ public class TemperaturaSemanalArray {
 	    	   
 	     }
 	     
+	     boolean temperaturaIgualDuranteSemana = true;
+	     if (diaQuente == diaFrio) {
+	    	 temperaturaIgualDuranteSemana = false;
+	    	 System.out.println("A semana não tem diferenças climaticas.");
+         }
+	     
+	     while(temperaturaIgualDuranteSemana) { 
 	     if(diaQuente == semana[0]) {
 	    		System.out.println("O dia mais quente é segunda-feira: " + semana[0]);
 	    	} else if (diaQuente == semana[1]) {
@@ -77,10 +84,9 @@ public class TemperaturaSemanalArray {
 	    	 if(semana[i] < semana[0]) {
 	    		 diaFrio = semana[i];
 	    	 }
-	    	
 	     }
 	     
-	     if(diaFrio == semana[0]) {
+	     if(diaFrio == semana[0]) {    	
 	    		System.out.println("O dia mais frio é segunda-feira: " + semana[0]);
 	    	} else if (diaFrio == semana[1]) {
 	    		System.out.println("O dia mais frio é terça-feira: " + semana[1]);
@@ -95,6 +101,10 @@ public class TemperaturaSemanalArray {
 	    	} else if (diaFrio == semana[6]) {
 	    		System.out.println("O dia mais frio é domingo: " + semana[6]);
 	    	}      
+	     
+	     temperaturaIgualDuranteSemana = false;
+	     }
+	    
 	     
 	     
 		scanner.close();
